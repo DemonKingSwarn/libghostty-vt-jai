@@ -1,0 +1,12 @@
+prefix=/home/swarn/projects/libghostty-vt-1.0.1/zig-out
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: ghostty-vt-static
+URL: https://github.com/ghostty-org/ghostty
+Description: Ghostty VT library (static)
+Version: 1.0.1
+Cflags: -I${includedir} -DGHOSTTY_STATIC
+Libs: ${libdir}/libghostty-vt.a
+Libs.private: 
+Requires.private: 
