@@ -74,7 +74,7 @@ fix_overlay_comments :: (filename: string) {
       append(*builder, "\n");
     } else {
       if jx_ends_with(line, MARKER) {
-        line = jx_trim_right(jx_substr(line, 0, line.count - 3)); // Drop "/**".
+        line = jx_trim_right(jx_substr(line, 0, line.count - 3));
         indent = jx_substr(line, 0, jx_indent_length(line));
         in_block = true;
       }
